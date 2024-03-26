@@ -1,7 +1,7 @@
 # decoderfromscratch
 
 Simple probabilistic generative Transformer.
-The code is inspired by the book of Huggingface et the annotatedTransformer website.
+The code is inspired by the book of Huggingface and the annotatedtransformer website.
 
 ## To train a model
 Just clone this repository, and from the directory decoderfromscratch execute the training script:
@@ -16,3 +16,4 @@ A pretrained model is in the checkpoint directory. Just execute the generation s
 
 python3 generate.py
 
+## the file sample.txt is an example of generated text. 
