@@ -16,4 +16,4 @@ A pretrained model is in the checkpoint directory. Just execute the generation s
 
 python3 generate.py
 
-## the file sample.txt is an example of generated text. 
+### The file sample.txt is an example of generated text. 
