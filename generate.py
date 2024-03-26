@@ -11,7 +11,7 @@ from model import *
 
 
 class Tokenizer:
-    def __init__(self,filename="shakespearemod.txt"):
+    def __init__(self,filename="./data/shakespearetrain.txt"):
         self.all_characters=""
         with open(filename) as filenar:
            READEN_TEXT = filenar.read() 
@@ -59,4 +59,4 @@ model = make_model(block_size,V,N=N,d_model=d_model, d_ff=d_ff, h=h)
 model=model.to(device)
 model.load_state_dict(checkpoint['model'])
 
-print(generate(model,tokenizer,max_len=1000,block_size=256,temperature=0.8))
+print(generate(model,tokenizer,max_len=10000,block_size=256,temperature=0.8))
